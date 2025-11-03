@@ -11,3 +11,4 @@ def z_Score(data_point, mu, std):
 # Print
 results = z_Score(data_point,mu,std)
 print(f"Z Score: {results}")
+

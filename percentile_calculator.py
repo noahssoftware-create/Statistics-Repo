@@ -10,4 +10,4 @@ def percentile(mu,z,sigma):
 
 #Print
 results = percentile(mu,z,sigma)
-print(f"The data point falls with the {results} percentile")
+print(f"The data point falls with the top {results} percentile")
