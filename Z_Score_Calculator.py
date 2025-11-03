@@ -1,5 +1,5 @@
 import pandas as pd
-
+from decimal import *
 #import csv for z table
 ztable_df = pd.read_csv("ztable_stats.csv")
 
@@ -17,6 +17,7 @@ z_Score = z_Score(data_point,mu,std)
 
 
 # Find the column& row for z  table data frame
-rounded_z_score = round(float(z_Score,2))
-column_value = round(float (rounded_z_score)[-1:])
-row_value = round(float(rounded_z_score,1))
+column_value = float(round(z_Score[-1]))
+row_value = float(round(z_Score,1))
+
+print(column_value)
