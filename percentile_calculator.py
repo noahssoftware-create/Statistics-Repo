@@ -1,3 +1,5 @@
+import pandas as pd
+
 # Create a Calculator that tells you what percentile the data falls under
 z = float(input("Enter Z score: "))
 mu = float(input("The populations mean: "))

@@ -1,3 +1,5 @@
+import pandas as pd
+
 #Create variables inside Z score calculator
 data_point = float(input("Individual value: "))
 mu = float(input("Population mean: "))
