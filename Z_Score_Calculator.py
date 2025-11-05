@@ -3,7 +3,7 @@ from decimal import *
 import numpy as np
 
 # Import csv for z table
-ztable_df = pd.read_csv("ztable_stats.csv")
+ztable_df = pd.read_csv("ztable_stats.csv",sep=";",index_col="Z")
 
 # Create variables inside Z score calculator
 data_point = float(input("Individual value: "))
@@ -17,15 +17,26 @@ def z_Score(data_point, mu, std):
 
 # Round Z score to the 2nd decimal
 z_Score = z_Score(data_point,mu,std)
-z_Score = round(z_Score,2)
+z_Score = float(round(z_Score,2))
 
 # Find the column& row for z  table data frame
 ztable_row = (z_Score * 10)
-ztable_row = (np.trunc(ztable_row))/10
+ztable_row = float((np.trunc(ztable_row))/10)
 
 ztable_column = (ztable_row - z_Score)
-ztable_column = round(ztable_column,2)
+ztable_column = float(round(ztable_column,2))
+
+# Convert the column veriable into a positive
+if ztable_column < 0:
+    ztable_column = ztable_column * -1
+else:
+    pass
+
+find_column_str = f".{int(ztable_column * 100) :02d}"
+find_row_str = str(ztable_row)
+probability = ztable_df[find_row_str,find_column_str]
 
 
 # Print Z Score and Probability of getting that value
 print(f"Z score: {z_Score}")
+print(probability)
