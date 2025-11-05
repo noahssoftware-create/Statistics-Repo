@@ -15,7 +15,7 @@ def z_Score(data_point, mu, std):
     return z
 
 z_Score = z_Score(data_point,mu,std)
-
+z_Score = round(z_Score,2)
 
 # Find the column& row for z  table data frame
 row_column = np.trunc(z_Score * 100)
