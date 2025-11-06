@@ -33,10 +33,11 @@ else:
     pass
 
 find_column_str = f".{int(ztable_column * 100) :02d}"
-find_row_str = str(ztable_row)
-probability = ztable_df[find_row_str,find_column_str]
+
+probability = ztable_df.at[ztable_row,find_column_str]
 
 
 # Print Z Score and Probability of getting that value
 print(f"Z score: {z_Score}")
 print(probability)
+print(find_column_str)
