@@ -32,12 +32,12 @@ if ztable_column < 0:
 else:
     pass
 
+#Locate the probability on the z table
 find_column_str = f".{int(ztable_column * 100) :02d}"
-
 probability = ztable_df.at[ztable_row,find_column_str]
+round(probability,3)
 
 
 # Print Z Score and Probability of getting that value
 print(f"Z score: {z_Score}")
 print(probability)
-print(find_column_str)
