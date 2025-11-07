@@ -27,17 +27,14 @@ ztable_column = (ztable_row - z_Score)
 ztable_column = float(round(ztable_column,2))
 
 # Convert the column veriable into a positive
-if ztable_column < 0:
-    ztable_column = ztable_column * -1
-else:
-    pass
+ztable_column = abs(ztable_column)
 
 #Locate the probability on the z table
 find_column_str = f".{int(ztable_column * 100) :02d}"
 probability = ztable_df.at[ztable_row,find_column_str]
-round(probability,3)
-
+probability = round(probability * 1000)
+percentage = probability / 10
 
 # Print Z Score and Probability of getting that value
 print(f"Z score: {z_Score}")
-print(probability)
+print(f"Data falls within {percentage}% of all data")
