@@ -35,7 +35,16 @@ def z_Score_Calculator():
     probability = ztable_df.at[ztable_row,find_column_str]
     probability = round(probability * 1000)
     percentage = probability / 10
-
+    
+    # Check to see if z score was negative or not and calculate acordingly
+    if z_Score < 0:
+        percentage = percentage - 100
+    else:
+        pass
+    
     # Print Z Score and Probability of getting that value
     print(f"Z score: {z_Score}")
     print(f"Data falls within {percentage}% of all data")
+
+#Run Z Score Calculator
+z_Score_Calculator()
