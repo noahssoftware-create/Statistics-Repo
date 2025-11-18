@@ -6,13 +6,11 @@ import seaborn as sns
 #Scatter plot of data
 df = pd.read_csv("data.csv")
 
-m = input ("imput slope m: ")
-b = input ("input intercept b: ")
+m = float(input ("imput slope m: "))
+b = float(input ("input intercept b: "))
 
 #Calculate the Sum of Squared Errors
-def SSE(x, y1, m, b):
-    """ y1 is the slope of the predicted line
-    y2 is the actual data points """
-    y1 = m * x + b
-    SSE = sum((y1 - y2) ** 2)
-    return SSE
+def SSE(x, true_y, m, b):
+    # y1 is the slope of the predicted line y2 is the actual data points
+    slopes_y = m * x + b
+    return np.sum((slopes_y - true_y) ** 2)
