@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Better Analyze - Solutions & Equations</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styleSheet.css">
+</head>
+<body>
+    <header class="dark-bg">
+        <div class="header-container flex-center">
+            <div class="nav-section flex-center">
+                <a href="index.html" class="logo text-white-link">Logo</a>
+                <nav class="navigation flex-center">
+                    <a href="" class="nav-link text-white-link">Products & Services</a>
+                    <a href="pricing.html" class="nav-link text-white-link">Plans & Pricing</a>
+                    <a href="business_types.html" class="nav-link text-white-link">Business Type</a>
+                    <a href="" class="nav-link text-white-link">Resources</a>
+                    <a href="solutions_equations.html" class="nav-link text-white-link">Solutions and Equations</a>
+                </nav>
+            </div>
+            <div class="header-actions flex-center">
+                <p class="support-info text-white">Support:(480-414-****)</p>
+                <a href="sign_in.html" class="sign-in-link text-white-link">Sign In</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="solutions-container">
+        <div class="solutions-header">
+            <h1 class="solutions-title">What's new in Better Analysis</h1>
+            <a href="sign_in.html" class="btn btn-primary btn-large">Get Started</a>
+        </div>
+
+        <div class="models-grid">
+            <!-- Brownian Motion -->
+            <div class="model-card">
+                <h2 class="model-name">Brownian Motion</h2>
+                <div class="model-equations">
+                    <div class="equation-box">
+                        <div class="equation">dW(t) = ε(t)√dt</div>
+                        <div class="equation-vars">
+                            <div>dW(t) = Wiener process increment</div>
+                            <div>ε(t) ~ N(0,1) = standard normal random variable</div>
+                            <div>dt = time increment</div>
+                        </div>
+                    </div>
+                    <div class="equation-box">
+                        <div class="equation">dS = μS dt + σS dW</div>
+                        <div class="equation-vars">
+                            <div>S = asset price</div>
+                            <div>μ = drift coefficient</div>
+                            <div>σ = volatility</div>
+                            <div>dW = Wiener process</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="model-use-cases">
+                    <h4 class="use-cases-title">Use Cases</h4>
+                    <ul class="use-cases-list">
+                        <li>Stock price modeling</li>
+                        <li>Option pricing (Black-Scholes)</li>
+                        <li>Risk analysis in finance</li>
+                        <li>Market volatility prediction</li>
+                    </ul>
+                    <h5 class="business-types-title">Business Types:</h5>
+                    <ul class="business-types-list">
+                        <li>Investments</li>
+                        <li>Real Estate</li>
+                        <li>Firms</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Linear Regression -->
+            <div class="model-card">
+                <h2 class="model-name">Linear Regression</h2>
+                <div class="model-equations">
+                    <div class="equation-box">
+                        <div class="equation">y = mx + b</div>
+                        <div class="equation-vars">
+                            <div>y = dependent variable</div>
+                            <div>m = slope = Δy/Δx</div>
+                            <div>x = independent variable</div>
+                            <div>b = y-intercept</div>
+                        </div>
+                    </div>
+                    <div class="equation-box">
+                        <div class="equation">m = (nΣxy - ΣxΣy) / (nΣx² - (Σx)²)</div>
+                    </div>
+                    <div class="equation-box">
+                        <div class="equation">b = (Σy - mΣx) / n</div>
+                    </div>
+                </div>
+                <div class="model-use-cases">
+                    <h4 class="use-cases-title">Use Cases</h4>
+                    <ul class="use-cases-list">
+                        <li>Sales forecasting and revenue prediction</li>
+                        <li>Trend analysis and growth modeling</li>
+                        <li>Demand forecasting in retail</li>
+                        <li>Cost estimation and budgeting</li>
+                    </ul>
+                    <h5 class="business-types-title">Business Types:</h5>
+                    <ul class="business-types-list">
+                        <li>Retail</li>
+                        <li>Food Industry</li>
+                        <li>Real Estate</li>
+                        <li>Firms</li>
+                        <li>Investments</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Gradient Descent -->
+            <div class="model-card">
+                <h2 class="model-name">Gradient Descent</h2>
+                <div class="model-equations">
+                    <div class="equation-box">
+                        <div class="equation">θ<sub>t+1</sub> = θ<sub>t</sub> - α∇J(θ<sub>t</sub>)</div>
+                        <div class="equation-vars">
+                            <div>θ = parameters</div>
+                            <div>α = learning rate</div>
+                            <div>∇J(θ) = gradient of cost function</div>
+                        </div>
+                    </div>
+                    <div class="equation-box">
+                        <div class="equation">∇J(θ) = ∂J/∂θ</div>
+                    </div>
+                    <div class="equation-box">
+                        <div class="equation">J(θ) = (1/2m)Σ(h<sub>θ</sub>(x<sub>i</sub>) - y<sub>i</sub>)²</div>
+                    </div>
+                </div>
+                <div class="model-use-cases">
+                    <h4 class="use-cases-title">Use Cases</h4>
+                    <ul class="use-cases-list">
+                        <li>Model parameter optimization</li>
+                        <li>Machine learning model training</li>
+                        <li>Cost function minimization</li>
+                        <li>Predictive model fine-tuning</li>
+                    </ul>
+                    <h5 class="business-types-title">Business Types:</h5>
+                    <ul class="business-types-list">
+                        <li>Firms</li>
+                        <li>Investments</li>
+                        <li>Statistics & Probability</li>
+                        <li>Retail</li>
+                        <li>Real Estate</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Variance -->
+            <div class="model-card">
+                <h2 class="model-name">Variance</h2>
+                <div class="model-equations">
+                    <div class="equation-box">
+                        <div class="equation">σ² = (1/n)Σ(x<sub>i</sub> - μ)²</div>
+                        <div class="equation-vars">
+                            <div>σ² = population variance</div>
+                            <div>s² = sample variance = (1/(n-1))Σ(x<sub>i</sub> - x̄)²</div>
+                            <div>μ = population mean</div>
+                            <div>x̄ = sample mean</div>
+                        </div>
+                    </div>
+                    <div class="equation-box">
+                        <div class="equation">σ = √σ² = √[(1/n)Σ(x<sub>i</sub> - μ)²]</div>
+                    </div>
+                </div>
+                <div class="model-use-cases">
+                    <h4 class="use-cases-title">Use Cases</h4>
+                    <ul class="use-cases-list">
+                        <li>Risk measurement in investments</li>
+                        <li>Data variability assessment</li>
+                        <li>Quality control variance analysis</li>
+                        <li>Portfolio volatility calculation</li>
+                    </ul>
+                    <h5 class="business-types-title">Business Types:</h5>
+                    <ul class="business-types-list">
+                        <li>Investments</li>
+                        <li>Manufacturing</li>
+                        <li>Retail</li>
+                        <li>Firms</li>
+                        <li>Real Estate</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+

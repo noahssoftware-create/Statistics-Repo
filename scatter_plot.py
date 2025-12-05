@@ -3,7 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-df = pd.read_csv("heart_disease_data.csv")
+df = pd.read_csv("heart_disease_uci.csv")
 df = df.sort_values(by=['age', 'chol'], ascending=[True, True])
 
 plt.figure(figsize=(10,6))
